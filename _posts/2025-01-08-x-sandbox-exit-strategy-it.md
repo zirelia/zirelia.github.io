@@ -28,7 +28,7 @@ Sì. X non proibisce:
 Su X esistono migliaia di AI influencer. La piattaforma lo sa e non li banna come categoria.
 
 **Quello che X proibisce davvero:**
-- Comportamento coordinato inauthèntico (reti di engagement fake)
+- Comportamento coordinato non autentico (reti di engagement fake)
 - Impersonificazione di persone reali
 - Spam e automazione aggressiva
 - Bot farm che gestiscono account paralleli per manipolare il feed
