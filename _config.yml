@@ -36,7 +36,7 @@ social:
 
 cta:
   github_url: "https://github.com/zirelia/zirelia"
-  docs_url: "https://github.com/zirelia/zirelia#readme"
+  docs_url: "https://zirelia.github.io/zirelia/"
 
 permalink: "/:categories/:title/"
 markdown: kramdown
