@@ -4,7 +4,7 @@
 
   <!-- Close Button -->
   <button id="cta-close-btn" aria-label="Close"
-    class="absolute top-3 right-3 text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+    class="absolute top-3 right-3 text-gray-400 hover:text-black dark:hover:text-white transition-colors p-2 min-w-[44px] min-h-[44px] flex items-center justify-center">
     <i class="fas fa-times"></i>
   </button>
 
@@ -38,44 +38,77 @@
 </div>
 
 <script>
+(function () {
+  // Guard: prevent duplicate initialization if include is loaded multiple times
+  if (window.__ctaPopupInit) return;
+  window.__ctaPopupInit = true;
+
   document.addEventListener("DOMContentLoaded", function () {
-    const cta = document.getElementById("cta-popup");
-    const closeBtn = document.getElementById("cta-close-btn");
+    var cta = document.getElementById("cta-popup");
+    var closeBtn = document.getElementById("cta-close-btn");
+    if (!cta || !closeBtn) return;
 
-    // Internal state to prevent reappearance in same session
-    let isDismissed = localStorage.getItem('cta_popup_closed') === 'true';
+    var isDismissed = localStorage.getItem('cta_popup_closed') === 'true';
+    var shown = false;
+    var pageReadyMs = Date.now();
+    var MIN_TIME_MS = 8000;   // don't show before 8 seconds on page
+    var SCROLL_THRESHOLD = 65; // show after 65% scroll depth
 
-
-
-    // Only add scroll listener if not already dismissed globally
-    if (!isDismissed) {
-      window.addEventListener("scroll", function () {
-        // Double check state inside listener
-        if (isDismissed) return;
-
-        const docHeight = document.documentElement.scrollHeight;
-        const scrollPos = window.scrollY + window.innerHeight;
-        const scrollPercent = (scrollPos / docHeight) * 100;
-
-        if (scrollPercent > 50) {
-          cta.classList.remove('hidden');
-          // Small delay to allow display:block to apply before opacity transition
-          setTimeout(() => {
-            cta.classList.remove('translate-y-10', 'opacity-0');
-          }, 10);
-        }
+    function showPopup() {
+      if (shown || isDismissed) return;
+      shown = true;
+      cta.classList.remove('hidden');
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          cta.classList.remove('translate-y-10', 'opacity-0');
+        });
       });
     }
 
-    closeBtn.addEventListener("click", function () {
-      // Set state immediately to block scroll listener
+    function hidePopup() {
       isDismissed = true;
       localStorage.setItem('cta_popup_closed', 'true');
-
       cta.classList.add('translate-y-10', 'opacity-0');
-      setTimeout(() => {
+      setTimeout(function () {
         cta.classList.add('hidden');
       }, 500);
+    }
+
+    if (!isDismissed) {
+      window.addEventListener("scroll", function onScroll() {
+        if (isDismissed || shown) {
+          window.removeEventListener("scroll", onScroll);
+          return;
+        }
+        var docHeight = document.documentElement.scrollHeight;
+        var scrollPos = window.scrollY + window.innerHeight;
+        var scrollPercent = (scrollPos / docHeight) * 100;
+        var elapsed = Date.now() - pageReadyMs;
+
+        if (scrollPercent > SCROLL_THRESHOLD && elapsed > MIN_TIME_MS) {
+          showPopup();
+          window.removeEventListener("scroll", onScroll);
+        }
+      }, { passive: true });
+    }
+
+    // Close on button click
+    closeBtn.addEventListener("click", hidePopup);
+
+    // Close on Escape key
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && shown && !isDismissed) hidePopup();
     });
+
+    // Mobile: swipe down to dismiss
+    var touchStartY = 0;
+    cta.addEventListener("touchstart", function (e) {
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+    cta.addEventListener("touchend", function (e) {
+      var dy = e.changedTouches[0].clientY - touchStartY;
+      if (dy > 60) hidePopup(); // swipe down 60px = dismiss
+    }, { passive: true });
   });
+}());
 </script>

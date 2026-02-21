@@ -1,80 +1,103 @@
 ---
 layout: default
-title: Termini di Servizio - KineticMCP
+title: Termini di Servizio - Zirelia
 lang: it
 locale: it_IT
-description: "Termini di Servizio Commerciali per KineticMCP Enterprise Edition."
+description: "Termini di Servizio per Zirelia — l'Autonomous AI Virtual Influencer Engine."
 ---
 
 <section class="pt-32 pb-20 px-6">
     <div class="max-w-4xl mx-auto prose dark:prose-invert">
-        <h1 class="text-4xl font-black mb-8">Termini di Servizio (Commerciali)</h1>
+        <h1 class="text-4xl font-black mb-8">Termini di Servizio</h1>
         <p class="lead text-xl text-gray-500 mb-8">Data di Validità: {{ site.time | date: "%d %B %Y" }}</p>
 
         <h3>1. Struttura dell'Accordo</h3>
-        <p>I presenti Termini di Servizio ("Termini") regolano rigorosamente l'uso di KineticMCP ("Software"), un
-            prodotto software aziendale proprietario fornito dal Team KineticMCP ("Licenziante"). Acquistando,
-            scaricando o installando il Software, l'utente ("Licenziatario" o "Cliente") accetta di essere vincolato dai
-            presenti Termini. Questi Termini operano in congiunzione con il vostro specifico <strong>Ordine Aziendale
-                (Order Form)</strong> o <strong>Contratto Master di Servizi (MSA)</strong>.</p>
+        <p>I presenti Termini di Servizio ("Termini") regolano l'utilizzo di Zirelia ("Software"), un motore
+            open-source per virtual influencer autonomi basati su AI, sviluppato da Antonio Trento ("Autore").
+            Scaricando, installando o utilizzando il Software, l'utente ("Utente") accetta i presenti Termini e la
+            <strong>Elastic License 2.0 (ELv2)</strong> con cui il Software è distribuito.</p>
 
-        <h3>2. Diritti Proprietari & Closed Source</h3>
-        <p><strong>Il Software NON è open source.</strong> È un prodotto commerciale proprietario e confidenziale,
-            protetto dalle leggi internazionali sul copyright e dai trattati sui segreti commerciali.</p>
+        <h3>2. Concessione della Licenza</h3>
+        <p>Il Software è fornito ai sensi della <strong>Elastic License 2.0 (ELv2)</strong>. È concessa una licenza
+            non esclusiva, mondiale, non sublicenziabile e non trasferibile per:</p>
         <ul>
-            <li><strong>Divieto di Copia:</strong> Non è consentito copiare, distribuire o rivendere il Software.</li>
-            <li><strong>Reverse Engineering Proibito:</strong> È severamente vietato effettuare reverse engineering,
-                decompilazione, disassemblaggio o tentare di derivare il codice sorgente del Software.</li>
-            <li><strong>Proprietà:</strong> Il Licenziante mantiene tutti i diritti, titoli e interessi relativi al
-                Software, inclusi tutti i diritti di proprietà intellettuale.</li>
+            <li>Utilizzare, copiare e modificare il Software per uso personale o per operazioni aziendali interne.</li>
+            <li>Distribuire il Software a terzi, incluse la licenza e senza aggirarla.</li>
+        </ul>
+        <p><strong>È vietato:</strong></p>
+        <ul>
+            <li>Fornire il Software a terzi come servizio hosted o gestito, dove i terzi non controllano
+                l'infrastruttura.</li>
+            <li>Aggirare chiavi di licenza, flag di funzionalità o protezioni simili nel Software.</li>
         </ul>
 
-        <h3>3. Concessione della Licenza Commerciale</h3>
-        <p>Previo pagamento delle tariffe applicabili, il Licenziante concede al Licenziatario una licenza non
-            esclusiva, non trasferibile e limitata per installare ed eseguire il Software sull'infrastruttura
-            self-hosted del Licenziatario, esclusivamente per le operazioni aziendali interne. Questa licenza è
-            vincolata allo specifico livello "Founding Partner" o "Enterprise" acquistato.</p>
-
-        <h3>4. Esonero da Responsabilità per Azioni AI</h3>
-        <p>Il Software facilita le connessioni tra Salesforce e Modelli AI di Terze Parti. L'utente riconosce che:</p>
+        <h3>3. Disclaimer AI — Generazione Autonoma di Contenuti</h3>
+        <p>Zirelia utilizza modelli linguistici di grandi dimensioni (LLM) e sistemi di generazione immagini per
+            produrre contenuti in modo autonomo. L'Utente riconosce e accetta che:</p>
         <ol>
-            <li><strong>Allucinazioni AI:</strong> I modelli AI possono essere imprevedibili e generare output errati o
-                dannosi ("Allucinazioni"). Il Licenziante non è responsabile per la natura, qualità o accuratezza degli
-                output generati.</li>
-            <li><strong>Human in the Loop:</strong> Siete gli unici responsabili della revisione e verifica di qualsiasi
-                azione (es. scritture su database, invio email) proposta o intrapresa dal Software.</li>
-            <li><strong>Nessuna Responsabilità:</strong> Il Licenziante NON sarà responsabile per perdite di dati,
-                interruzione dell'attività o danni derivanti da azioni intraprese da agenti AI connessi tramite il
+            <li><strong>Contenuti Generati da AI:</strong> Tutti i testi e le immagini prodotti dal Software sono
+                generati da modelli AI (es. OpenAI GPT-4, FLUX.1). L'Autore non può garantire accuratezza,
+                appropriatezza o conformità di tali contenuti a leggi o politiche di piattaforma.</li>
+            <li><strong>Allucinazioni ed Errori:</strong> I modelli AI possono produrre output fattualmente errati,
+                offensivi o legalmente problematici. L'Utente è l'unico responsabile della revisione dei contenuti
+                prima della pubblicazione.</li>
+            <li><strong>Identità Visiva:</strong> Le immagini generate da AI potrebbero involontariamente assomigliare
+                a persone reali. L'Utente deve assicurarsi che i contenuti generati non violino leggi applicabili
+                sull'identità, la diffamazione o i media sintetici (deepfake).</li>
+            <li><strong>Nessuna Responsabilità per Output AI:</strong> L'Autore NON sarà responsabile per danni,
+                rivendicazioni legali, danni reputazionali o perdite derivanti da contenuti generati o pubblicati dal
                 Software.</li>
         </ol>
 
-        <h3>5. Zero Data Retention & Sicurezza</h3>
-        <p>Il Software è progettato come un'architettura <strong>Stateless</strong>. Agisce esclusivamente come tunnel
-            crittografato per il transito dei dati tra la vostra istanza Salesforce e i fornitori di LLM.
-            Il Licenziante garantisce che:</p>
+        <h3>4. Conformità alle Piattaforme Social</h3>
+        <p>La pubblicazione automatizzata su piattaforme social (Twitter/X, Instagram, ecc.) potrebbe violare i
+            Termini di Servizio di tali piattaforme. L'Utente riconosce che:</p>
         <ul>
-            <li>Non archivia, registra o persite alcun dato di business (Customer Data) sui propri server.</li>
-            <li>Non utilizza i dati del cliente per l'addestramento di modelli propri.</li>
-            <li>Tutte le chiavi API e credenziali risiedono esclusivamente sull'infrastruttura del Cliente.</li>
+            <li>È l'unico responsabile di garantire che l'uso del Software sia conforme ai ToS di qualsiasi
+                piattaforma connessa.</li>
+            <li>L'Autore non incoraggia né approva violazioni delle politiche di piattaforme di terze parti.</li>
+            <li>Sospensioni di account, ban o azioni legali da parte delle piattaforme sono di esclusiva
+                responsabilità dell'Utente.</li>
+            <li>"Twitter", "X", "Instagram", "Meta", "OpenAI", "Anthropic", "Replicate" sono marchi dei rispettivi
+                proprietari. Zirelia non è affiliata, approvata o supportata da nessuna di queste società.</li>
         </ul>
 
-        <h3>5. Limitazione di Responsabilità Aziendale</h3>
-        <p>NELLA MISURA MASSIMA CONSENTITA DALLA LEGGE, IN NESSUN CASO IL LICENZIANTE SARÀ RESPONSABILE PER DANNI
-            INDIRETTI, CONSEQUENZIALI, INCIDENTALI O SPECIALI (INCLUSA LA PERDITA DI FATTURATO O DATI). LA
-            RESPONSABILITÀ CUMULATIVA TOTALE DEL LICENZIANTE NON SUPERERÀ L'IMPORTO TOTALE DELLE TARIFFE PAGATE DAL
-            LICENZIATARIO AL LICENZIANTE NEI DODICI (12) MESI PRECEDENTI IL RECLAMO.</p>
+        <h3>5. Gestione dei Dati & Privacy</h3>
+        <p>Zirelia è un Software <strong>self-hosted e stateless</strong>. L'Autore non raccoglie, archivia o ha
+            accesso a nessun dato elaborato dalla vostra istanza. Chiavi API, configurazioni persona e contenuti
+            generati risiedono esclusivamente sulla vostra infrastruttura. Consultare la nostra
+            <a href="/it/privacy/">Privacy Policy</a> per i dettagli completi.</p>
 
-        <h3>6. Disclaimer Integrazione Salesforce</h3>
-        <p>Il Software è uno strumento indipendente. "Salesforce" è un marchio registrato di Salesforce, Inc. Questo
-            Software non è approvato, affiliato o supportato da Salesforce, Inc. Il Licenziatario dichiara di possedere
-            i diritti e i permessi necessari per accedere alle istanze Salesforce connesse al Software.</p>
-        <p>Il Licenziante non è responsabile per modifiche unilaterali alle API di Salesforce, limiti di rate, o
-            modifiche ai costi di licenza imposti da Salesforce Inc. che potrebbero impattare la funzionalità del
-            Software.</p>
+        <h3>6. GDPR & Consenso al Marketing</h3>
+        <p>Questo sito web (zirelia.github.io) può raccogliere dati minimi tramite cookie a scopo analitico.
+            Continuando a navigare nel sito, si acconsente all'uso dei cookie come descritto nella nostra
+            <a href="/it/privacy/">Privacy Policy</a>. Il consenso può essere revocato in qualsiasi momento
+            cancellando i cookie del browser. I dati non vengono utilizzati per pubblicità mirata.</p>
 
-        <h3>7. Legge Applicabile e Foro Competente</h3>
-        <p>I presenti Termini saranno regolati dalle leggi della Repubblica Italiana.
-            Per qualsiasi controversia derivante dall'interpretazione o esecuzione del presente accordo, le parti
-            stabiliscono la competenza esclusiva del <strong>Foro di Milano</strong>.</p>
+        <h3>7. Limitazione di Responsabilità</h3>
+        <p>NELLA MISURA MASSIMA CONSENTITA DALLA LEGGE APPLICABILE, IN NESSUN CASO L'AUTORE SARÀ RESPONSABILE PER
+            DANNI INDIRETTI, CONSEQUENZIALI, INCIDENTALI, SPECIALI O PUNITIVI (INCLUSA LA PERDITA DI DATI, FATTURATO,
+            PROFITTI O OPPORTUNITÀ DI BUSINESS). LA RESPONSABILITÀ CUMULATIVA TOTALE DELL'AUTORE NON SUPERERÀ
+            €100 (CENTO EURO).</p>
+
+        <h3>8. Esclusione di Garanzie</h3>
+        <p>IL SOFTWARE È FORNITO "COSÌ COM'È", SENZA GARANZIE DI ALCUN TIPO, ESPLICITE O IMPLICITE, INCLUSE MA
+            NON LIMITATE A GARANZIE DI COMMERCIABILITÀ, IDONEITÀ A UNO SCOPO SPECIFICO O NON VIOLAZIONE.
+            L'USO DEL SOFTWARE AVVIENE A RISCHIO ESCLUSIVO DELL'UTENTE.</p>
+
+        <h3>9. Legge Applicabile e Foro Competente</h3>
+        <p>I presenti Termini sono regolati dalla legge della <strong>Repubblica Italiana</strong>. Per qualsiasi
+            controversia derivante dall'interpretazione o esecuzione dei presenti Termini, è stabilita la competenza
+            esclusiva del <strong>Tribunale di Milano</strong>. Per gli utenti internazionali, nulla nei presenti
+            Termini limita i diritti garantiti dalla normativa obbligatoria a tutela dei consumatori nel paese di
+            residenza.</p>
+
+        <h3>10. Modifiche ai Termini</h3>
+        <p>L'Autore si riserva il diritto di aggiornare i presenti Termini in qualsiasi momento. Il proseguimento
+            dell'uso del Software dopo la pubblicazione delle modifiche costituisce accettazione dei Termini
+            aggiornati.</p>
+
+        <h3>11. Contatti</h3>
+        <p>Per questioni legali: <a href="mailto:info@antoniotrento.net">info@antoniotrento.net</a></p>
     </div>
 </section>
