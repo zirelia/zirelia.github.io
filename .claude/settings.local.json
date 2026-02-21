@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(/c/Users/hp/Documents/GitHub/zirelia.github.io/hero.html:*)"
+      "Bash(/c/Users/hp/Documents/GitHub/zirelia.github.io/hero.html:*)",
+      "Read(//c/Users/hp/Documents/GitHub/zirelia.github.io/**)",
+      "Bash(grep:*)"
     ]
   }
 }
