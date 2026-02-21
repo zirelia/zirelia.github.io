@@ -32,12 +32,22 @@ faq:
 
 social:
   github: "https://github.com/zirelia/zirelia"
-  twitter: "https://x.com"
+  twitter: "https://x.com/ItsSiennaFox"
 
 cta:
   github_url: "https://github.com/zirelia/zirelia"
   docs_url: "https://zirelia.github.io/zirelia/"
-  popup_url: "https://github.com/zirelia/zirelia"
+
+popup:
+  url: "https://github.com/zirelia/zirelia"
+  en:
+    title: "Launch Your Virtual Influencer"
+    body: "Define a persona. Zirelia handles posting, images, and scheduling — 24/7, automatically."
+    button: "Star on GitHub"
+  it:
+    title: "Lancia il tuo Virtual Influencer"
+    body: "Definisci una persona. Zirelia gestisce post, immagini e scheduling — 24/7, in automatico."
+    button: "Metti una stella su GitHub"
 
 permalink: "/:categories/:title/"
 markdown: kramdown
