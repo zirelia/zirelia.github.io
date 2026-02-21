@@ -93,4 +93,10 @@ git push origin main                     # Deploy automatico su GitHub Pages
 
 ---
 
+## todo
+
+- pagina blog lista rimuovere riferimenti a kinetic
+- popup post renderlo utile a zirelia
+- post cta in fondo renderla utile a zirelia
+
 Zirelia — *Define a persona. Zirelia does the rest — 24/7.*
