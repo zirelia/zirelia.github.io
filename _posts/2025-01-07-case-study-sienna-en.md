@@ -69,8 +69,8 @@ After four weeks of operation (manual warm-up for the first two weeks, then full
 
 ## The Engine Behind the Influencer
 
-Sienna Fox runs on a single VPS with 4GB RAM and 2 vCPUs. Total monthly infrastructure cost: approximately $20 (server) + variable API costs based on posting volume.
+Sienna Fox runs on a Raspberry Pi at home. Total monthly infrastructure cost: essentially zero (hardware already owned) + variable API costs based on posting volume.
 
-The Zirelia engine is what makes this possible at that cost. The entire pipeline — topic selection, LLM generation, image creation, scheduling, publishing — automated and running without human intervention.
+The Zirelia engine is what makes this possible on such modest hardware. The entire pipeline — topic selection, LLM generation, image creation, scheduling, publishing — automated and running without human intervention.
 
 That's the promise of Zirelia: **define a persona, and the engine does the rest.**

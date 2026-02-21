@@ -69,8 +69,8 @@ Dopo quattro settimane di operatività (warm-up manuale per le prime due settima
 
 ## Il Motore Dietro l'Influencer
 
-Sienna Fox gira su un singolo VPS con 4GB di RAM e 2 vCPU. Costo totale mensile dell'infrastruttura: circa 20€ (server) + costi API variabili in base al volume di pubblicazione.
+Sienna Fox gira su un Raspberry Pi di casa. Costo totale mensile dell'infrastruttura: praticamente zero (hardware già posseduto) + costi API variabili in base al volume di pubblicazione.
 
-Il motore Zirelia è ciò che rende possibile tutto questo a quel costo. L'intera pipeline — selezione argomento, generazione LLM, creazione immagine, schedulazione, pubblicazione — automatizzata e in esecuzione senza intervento umano.
+Il motore Zirelia è ciò che rende possibile tutto questo su hardware così modesto. L'intera pipeline — selezione argomento, generazione LLM, creazione immagine, schedulazione, pubblicazione — automatizzata e in esecuzione senza intervento umano.
 
 Questa è la promessa di Zirelia: **definisci una persona, e il motore fa il resto.**
