@@ -1,28 +1,8 @@
 
-// --- Theme Logic ---
-function initTheme() {
-  const html = document.documentElement;
-  // Check local storage or system preference
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    html.classList.add('dark');
-  } else {
-    html.classList.remove('dark');
-  }
-}
 
-function toggleTheme() {
-  const html = document.documentElement;
-  if (html.classList.contains('dark')) {
-    html.classList.remove('dark');
-    localStorage.theme = 'light';
-  } else {
-    html.classList.add('dark');
-    localStorage.theme = 'dark';
-  }
-}
+// --- Theme: Dark mode only ---
+document.documentElement.classList.add('dark');
 
-// Initialize theme immediately
-initTheme();
 
 document.addEventListener('DOMContentLoaded', () => {
   // --- UI Elements ---
@@ -35,12 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar');
   const newsletterForm = document.getElementById('newsletter-form');
   const contactForm = document.getElementById('contact-form');
-  const themeToggleBtn = document.getElementById('theme-toggle');
-  const themeToggleMobileBtn = document.getElementById('theme-toggle-mobile');
 
-  // Theme Event Listeners
-  if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);
-  if (themeToggleMobileBtn) themeToggleMobileBtn.addEventListener('click', toggleTheme);
 
 
   // --- Mobile Menu Logic ---
