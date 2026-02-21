@@ -6,5 +6,7 @@
   url: "/it/use-cases/"
 - title: "Docs"
   url: "/it/docs/"
+- title: "Blog"
+  url: "/it/blog/"
 - title: "GitHub"
   url: "https://github.com/zirelia/zirelia"
