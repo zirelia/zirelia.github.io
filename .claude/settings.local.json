@@ -3,7 +3,13 @@
     "allow": [
       "Bash(/c/Users/hp/Documents/GitHub/zirelia.github.io/hero.html:*)",
       "Read(//c/Users/hp/Documents/GitHub/zirelia.github.io/**)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Read(//c/Users/hp/Documents/GitHub/antoniotrento-net.github.io/_layouts/**)",
+      "Read(//c/Users/hp/Documents/GitHub/antoniotrento-net.github.io/_portfolio/**)",
+      "Read(//c/Users/hp/Documents/GitHub/antoniotrento-net.github.io/**)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\hp\\Documents\\GitHub\\antoniotrento-net.github.io\\_portfolio"
     ]
   }
 }
