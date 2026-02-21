@@ -5,7 +5,7 @@ date: 2025-01-08 10:00:00 +0100
 categories: [guida, sicurezza]
 lang: it
 description: "Account nuovo, persona AI realistica, zero engagement — X ti mette in sandbox prima che tu posti un singolo tweet. Ecco cosa sta succedendo e come risolverlo."
-image: /assets/images/blog/competitor-intel.png
+image: /assets/images/blog/x-sandbox.png
 ---
 
 Hai configurato Zirelia, generato i primi post, le immagini sono perfette — e non succede niente. Zero impression. Zero reach. I tuoi tweet spariscono nel vuoto.
