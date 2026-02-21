@@ -8,7 +8,7 @@ author:
   email: "info@antoniotrento.net"
   bio: "AI Engineer & Developer — Building autonomous virtual influencer systems"
 
-og_image: "assets/images/og-image.jpg"
+og_image: "/assets/images/og-images/default-og-image.jpg"
 
 paginate: 20
 paginate_path: "/blog/page:num"
@@ -33,6 +33,10 @@ faq:
 social:
   github: "https://github.com/zirelia/zirelia"
   twitter: "https://x.com"
+
+cta:
+  github_url: "https://github.com/zirelia/zirelia"
+  docs_url: "https://github.com/zirelia/zirelia#readme"
 
 permalink: "/:categories/:title/"
 markdown: kramdown

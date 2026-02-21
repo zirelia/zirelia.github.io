@@ -9,29 +9,29 @@
   </button>
 
   <div class="p-6">
-    <div class="w-10 h-10 rounded-full bg-brand-blue/10 flex items-center justify-center mb-4 text-brand-blue text-lg">
-      <i class="fas fa-rocket"></i>
+    <div class="w-10 h-10 rounded-full bg-brand-purple/10 flex items-center justify-center mb-4 text-brand-purple text-lg">
+      <i class="fas fa-robot"></i>
     </div>
 
     {% if page.lang == 'it' %}
-    <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">Costruisci il tuo Agente</h4>
+    <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">Lancia il tuo Virtual Influencer</h4>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-      Non aspettare i competitor. Trasforma Salesforce in un motore autonomo oggi stesso.
+      Definisci una persona. Zirelia gestisce post, immagini e scheduling — 24/7, in automatico.
     </p>
 
-    <a href="/it/pricing/"
-      class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-blue dark:hover:bg-brand-blue dark:hover:text-white transition-colors">
-      Diventa Partner Fondatore
+    <a href="{{ site.cta.github_url }}"
+      class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-purple dark:hover:bg-brand-purple dark:hover:text-white transition-colors">
+      <i class="fab fa-github mr-1"></i> Metti una stella su GitHub
     </a>
     {% else %}
-    <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">Build Your First Agent</h4>
+    <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">Launch Your Virtual Influencer</h4>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-      Don't let competitors get ahead. Turn Salesforce into an autonomous engine today.
+      Define a persona. Zirelia handles posting, images, and scheduling — 24/7, automatically.
     </p>
 
-    <a href="/en/pricing/"
-      class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-blue dark:hover:bg-brand-blue dark:hover:text-white transition-colors">
-      Become a Founding Partner
+    <a href="{{ site.cta.github_url }}"
+      class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-purple dark:hover:bg-brand-purple dark:hover:text-white transition-colors">
+      <i class="fab fa-github mr-1"></i> Star on GitHub
     </a>
     {% endif %}
   </div>
