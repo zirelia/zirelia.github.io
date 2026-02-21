@@ -1,0 +1,52 @@
+---
+layout: default
+title: Privacy Policy - KineticMCP
+lang: it
+locale: it_IT
+description: "Privacy Policy B2B. Il nostro principio 'Black Box' per la gestione dei dati."
+---
+
+<section class="pt-32 pb-20 px-6">
+    <div class="max-w-4xl mx-auto prose dark:prose-invert">
+        <h1 class="text-4xl font-black mb-8">B2B Privacy Policy</h1>
+        <p class="lead text-xl text-gray-500 mb-8">Data di Validità: {{ site.time | date: "%d %B %Y" }}</p>
+
+        <h3>1. Ambito della Policy</h3>
+        <p>Questa Privacy Policy si applica a KineticMCP in qualità di fornitore software B2B. Distingue rigorosamente
+            tra i visitatori del nostro sito web aziendale e i dati processati dalle vostre istanze self-hosted del
+            software KineticMCP.</p>
+
+        <h3>2. I Vostri Dati Cliente (Il Principio "Black Box")</h3>
+        <p><strong>Noi NON processiamo i vostri Dati Salesforce o Prompt AI.</strong></p>
+        <p>KineticMCP è architettato come "Middleware Self-Hosted". Quando installate il nostro container sui vostri
+            server (AWS, Azure, On-Premise):</p>
+        <ul>
+            <li>I dati fluiscono strettamente tra <strong>Il Vostro Server</strong> <-> <strong>La Vostra Org
+                        Salesforce</strong> <-> <strong>Il Vostro Provider AI</strong>.</li>
+            <li>Non abbiamo alcuna capacità tecnica di intercettare, visualizzare o archiviare i vostri record CRM,
+                prompt o logiche di business proprietarie.</li>
+            <li>Non siamo un "Data Processor" (Responsabile del Trattamento) per quanto riguarda i vostri dati aziendali
+                interni ai sensi del GDPR/CCPA, poiché non vi accediamo mai.</li>
+        </ul>
+
+        <h3>3. Dati di Validazione Licenza</h3>
+        <p>Per prevenire la pirateria e far rispettare i termini di licenza, il Software potrebbe contattare
+            periodicamente i nostri Server di Licenza per verificarne la validità. Gli unici dati trasmessi durante
+            questo "handshake" sono:</p>
+        <ul>
+            <li>Hash della Chiave di Licenza.</li>
+            <li>IP/Hostname del Server (per il blocco della postazione).</li>
+            <li>Numero di Versione.</li>
+        </ul>
+        <p>Nessun dato aziendale (record CRM) viene mai trasmesso in questo payload.</p>
+
+        <h3>4. Sicurezza della Nostra Infrastruttura</h3>
+        <p>Sebbene non ospitiamo le vostre istanze KineticMCP, manteniamo una sicurezza rigorosa sulla pipeline di
+            distribuzione del codice (Docker Hub, Registri Privati) per garantire che gli artefatti software scaricati
+            siano sicuri, firmati e privi di malware.</p>
+
+        <h3>5. Contatti per la Compliance</h3>
+        <p>Per i clienti Enterprise che richiedono Data Processing Agreements (DPA) relativi ai dati di fatturazione o
+            gestione account, si prega di contattare direttamente il proprio rappresentante.</p>
+    </div>
+</section>

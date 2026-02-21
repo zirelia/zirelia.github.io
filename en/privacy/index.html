@@ -1,0 +1,50 @@
+---
+layout: default
+title: Privacy Policy - KineticMCP
+lang: en
+locale: en_US
+description: "B2B Privacy Policy. Understanding our 'Black Box' data handling principle."
+---
+
+<section class="pt-32 pb-20 px-6">
+    <div class="max-w-4xl mx-auto prose dark:prose-invert">
+        <h1 class="text-4xl font-black mb-8">B2B Privacy Policy</h1>
+        <p class="lead text-xl text-gray-500 mb-8">Effective Date: {{ site.time | date: "%B %d, %Y" }}</p>
+
+        <h3>1. Scope of Policy</h3>
+        <p>This Privacy Policy applies to KineticMCP as a B2B software provider. It distinguishes strictly between our
+            corporate website visitors and the data processed by your self-hosted instances of KineticMCP software.</p>
+
+        <h3>2. Your Customer Data (The "Black Box" Principle)</h3>
+        <p><strong>We do NOT process your Salesforce Data or AI Prompts.</strong></p>
+        <p>KineticMCP is architected as a "Self-Hosted Middleware". When you install our container on your servers (AWS,
+            Azure, On-Premise):</p>
+        <ul>
+            <li>Data flows strictly between <strong>Your Server</strong> <-> <strong>Your Salesforce Org</strong> <->
+                        <strong>Your AI Provider</strong>.</li>
+            <li>We have zero technical capability to intercept, view, or store your CRM records, prompts, or proprietary
+                business logic.</li>
+            <li>We are not a "Data Processor" regarding your internal business data under GDPR/CCPA, as we never access
+                it.</li>
+        </ul>
+
+        <h3>3. License Validation Data</h3>
+        <p>To prevent piracy and enforce license terms, the Software may periodically contact our Licensing Servers to
+            verify validity. The only data transmitted during this "handshake" is:</p>
+        <ul>
+            <li>License Key Hash.</li>
+            <li>Server IP/Hostname (for seat-locking purposes).</li>
+            <li>Version Number.</li>
+        </ul>
+        <p>No business data (CRM records) is ever transmitted in this payload.</p>
+
+        <h3>4. Security of Our Infrastructure</h3>
+        <p>While we do not host your KineticMCP instances, we maintain strict security over the code delivery pipeline
+            (Docker Hub, Private Registries) to ensure the software artifacts you download are secure, signed, and free
+            from malware.</p>
+
+        <h3>5. Contact for Compliance</h3>
+        <p>For Enterprise customers requiring Data Processing Agreements (DPA) regarding billing or account management
+            data, please contact your account representative directly.</p>
+    </div>
+</section>

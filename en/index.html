@@ -1,0 +1,826 @@
+---
+layout: default
+title: "Zirelia — Autonomous AI Virtual Influencer Engine"
+lang: en
+locale: en_US
+description: "Zirelia is a fully autonomous AI virtual influencer engine. Define a persona in YAML. It thinks, generates
+images, and posts to Twitter/X — 24/7 without you."
+---
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <!-- Background: deep dark with purple glow -->
+    <div class="absolute inset-0 bg-brand-dark"></div>
+    <div
+        class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-brand-purple/10 rounded-full blur-[120px] pointer-events-none">
+    </div>
+    <div
+        class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-brand-pink/10 rounded-full blur-[120px] pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-6 w-full relative z-10">
+        <!-- Left: Content -->
+        <div class="reveal active">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-purple/10 border border-brand-purple/30 text-xs font-bold tracking-widest uppercase mb-8 text-brand-purpleLight">
+                <span class="w-2 h-2 rounded-full bg-brand-purple animate-pulse"></span>
+                Autonomous AI · Twitter/X · Open Source
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-black leading-[0.95] mb-6 font-display">
+                Your virtual influencer.<br>
+                <span class="gradient-text text-glow">Runs itself.</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-8 max-w-xl leading-relaxed">
+                Define a persona in a YAML file. Zirelia thinks original thoughts, generates a photorealistic face with
+                FLUX.1, and posts to Twitter/X — autonomously, 24/7.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="https://github.com/zirelia/zirelia" target="_blank" rel="noopener"
+                    class="flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-purple to-brand-pink font-bold text-lg hover:scale-105 transition-transform shadow-xl glow-purple">
+                    <i class="fab fa-github"></i> Star on GitHub
+                </a>
+                <a href="#quick-start"
+                    class="flex items-center justify-center gap-2 px-8 py-4 rounded-2xl border border-white/10 font-bold text-lg hover:bg-white/5 transition-colors">
+                    Quick Start <i class="fas fa-arrow-down text-sm"></i>
+                </a>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-4 text-sm font-medium text-gray-500">
+                <span class="flex items-center gap-2"><i class="fab fa-python text-brand-purpleLight"></i> Python
+                    3.10+</span>
+                <span class="flex items-center gap-2"><i class="fab fa-docker text-brand-purpleLight"></i> Docker
+                    Ready</span>
+                <span class="flex items-center gap-2"><i class="fas fa-bolt text-brand-purpleLight"></i> GPT-4
+                    Brain</span>
+                <span class="flex items-center gap-2"><i class="fas fa-image text-brand-purpleLight"></i> FLUX.1
+                    Images</span>
+            </div>
+        </div>
+
+        <!-- Right: Animated Post Mock -->
+        <div class="reveal delay-200 relative">
+            <!-- Glow behind card -->
+            <div
+                class="absolute -inset-4 bg-gradient-to-r from-brand-purple to-brand-pink rounded-3xl blur-2xl opacity-20 animate-pulse">
+            </div>
+
+            <!-- Post Card -->
+            <div class="relative bg-[#16141a] rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
+                <!-- Card Header (X/Twitter style) -->
+                <div class="px-6 pt-6 pb-4 flex items-start gap-4">
+                    <div class="relative flex-shrink-0">
+                        <!-- Avatar glow -->
+                        <div
+                            class="w-14 h-14 rounded-full bg-gradient-to-br from-brand-purple to-brand-pink flex items-center justify-center text-2xl glow-purple">
+                            🧜‍♀️
+                        </div>
+                        <div
+                            class="absolute -bottom-1 -right-1 w-5 h-5 bg-brand-purple rounded-full flex items-center justify-center border-2 border-[#16141a]">
+                            <i class="fas fa-robot text-white text-[8px]"></i>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-0.5">
+                            <span class="font-bold text-white">Sienna Fox</span>
+                            <svg class="w-4 h-4 text-brand-purple" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91-1.01-1-2.52-1.27-3.91-.81C14.67 2.88 13.43 2 12 2c-1.43 0-2.67.88-3.34 2.19-1.39-.46-2.9-.2-3.91.81-1 1.01-1.27 2.52-.81 3.91C2.88 9.33 2 10.57 2 12c0 1.43.88 2.67 2.19 3.34-.46 1.39-.2 2.9.81 3.91 1.01 1 2.52 1.27 3.91.81C9.33 21.12 10.57 22 12 22c1.43 0 2.67-.88 3.34-2.19 1.39.46 2.9.2 3.91-.81 1-1.01 1.27-2.52.81-3.91C21.12 14.67 22 13.43 22 12z" />
+                            </svg>
+                            <span
+                                class="text-xs text-brand-purple font-bold bg-brand-purple/10 px-2 py-0.5 rounded-full">AI-Generated</span>
+                        </div>
+                        <div class="text-gray-500 text-sm">@sienna_fox_ai · just now</div>
+                    </div>
+                    <div class="text-gray-600"><i class="fab fa-x-twitter text-lg"></i></div>
+                </div>
+
+                <!-- Post Text -->
+                <div class="px-6 pb-4 text-gray-200 leading-relaxed">
+                    morning glow hits different when you stayed up editing until 3am ✨<br>
+                    <span class="text-gray-400 text-sm">some days the grind is the glamour</span>
+                </div>
+
+                <!-- AI Generated Image placeholder -->
+                <div
+                    class="mx-6 mb-4 rounded-2xl overflow-hidden relative h-52 bg-gradient-to-br from-purple-900/50 to-pink-900/50 border border-white/5 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-4xl mb-3 animate-float">🎨</div>
+                        <div class="text-xs text-brand-purpleLight font-bold uppercase tracking-widest">FLUX.1 Generated
+                        </div>
+                        <div class="text-xs text-gray-600 mt-1">Sienna Fox — California lifestyle</div>
+                    </div>
+                    <!-- Corner badge -->
+                    <div
+                        class="absolute top-3 right-3 px-2 py-1 rounded-lg bg-black/60 backdrop-blur-sm text-xs text-brand-purpleLight font-mono border border-brand-purple/30">
+                        replicate/flux-1.1-pro
+                    </div>
+                </div>
+
+                <!-- Engagement bar -->
+                <div
+                    class="px-6 pb-4 border-t border-white/5 pt-3 flex items-center justify-between text-gray-500 text-sm">
+                    <div class="flex gap-6">
+                        <span
+                            class="flex items-center gap-1.5 hover:text-brand-pink cursor-pointer transition-colors"><i
+                                class="far fa-heart"></i> 2.4k</span>
+                        <span
+                            class="flex items-center gap-1.5 hover:text-brand-purple cursor-pointer transition-colors"><i
+                                class="fas fa-retweet"></i> 841</span>
+                        <span class="flex items-center gap-1.5 cursor-pointer"><i class="far fa-comment"></i> 127</span>
+                    </div>
+                    <div
+                        class="font-mono text-xs text-brand-purple bg-brand-purple/10 px-3 py-1 rounded-full border border-brand-purple/20">
+                        <i class="fas fa-robot text-[10px] mr-1"></i> Posted by Zirelia
+                    </div>
+                </div>
+
+                <!-- Bottom AI Status bar -->
+                <div class="bg-brand-surface/50 px-6 py-3 border-t border-white/5 flex items-center justify-between">
+                    <div class="flex items-center gap-2 text-xs text-gray-500 font-mono">
+                        <div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
+                        Scheduler running · next post in 4h 22m
+                    </div>
+                    <div class="text-xs text-gray-600 font-mono">GPT-4o-mini · ChromaDB ✓</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ⚠️ Anti-Ban Warning Banner -->
+<section class="py-6 px-6 bg-yellow-500/10 border-y border-yellow-500/30">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4">
+        <div class="text-3xl">⚠️</div>
+        <div class="flex-1">
+            <p class="font-bold text-yellow-400 text-sm uppercase tracking-wide mb-1">Important — Read Before Starting
+            </p>
+            <p class="text-gray-400 text-sm">Starting the bot on a new account without proper warm-up is the #1 cause of
+                permanent shadowbans.</p>
+        </div>
+        <a href="https://zirelia.github.io/zirelia/guides/account_warmup/" target="_blank" rel="noopener"
+            class="flex-shrink-0 px-6 py-3 rounded-xl bg-yellow-500/20 border border-yellow-500/40 text-yellow-400 font-bold text-sm hover:bg-yellow-500/30 transition-colors whitespace-nowrap">
+            Read the Anti-Ban Guide →
+        </a>
+    </div>
+</section>
+
+<!-- What is Zirelia — 4 steps -->
+<section class="py-24 px-6 bg-brand-dark reveal">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <div
+                class="inline-block px-4 py-1.5 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-brand-purpleLight text-xs font-bold tracking-widest uppercase mb-6">
+                How it works</div>
+            <h2 class="text-4xl lg:text-5xl font-black font-display mb-4">What is Zirelia?</h2>
+            <p class="text-xl text-gray-500 max-w-2xl mx-auto">
+                A fully autonomous virtual influencer engine. You define the persona once — it runs forever.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card-glow bg-brand-surface rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-4 right-4 text-6xl font-black text-brand-purple/10 font-display">1</div>
+                <div
+                    class="w-14 h-14 rounded-2xl bg-brand-purple/20 border border-brand-purple/30 flex items-center justify-center text-2xl mb-6">
+                    🧠</div>
+                <h3 class="text-xl font-bold mb-3 font-display">Thinks</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">GPT-4 generates contextual, on-brand thoughts based on
+                    the persona's daily routine and ChromaDB memory of past posts — no repetition.</p>
+            </div>
+            <div class="card-glow bg-brand-surface rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-4 right-4 text-6xl font-black text-brand-pink/10 font-display">2</div>
+                <div
+                    class="w-14 h-14 rounded-2xl bg-brand-pink/20 border border-brand-pink/30 flex items-center justify-center text-2xl mb-6">
+                    🎨</div>
+                <h3 class="text-xl font-bold mb-3 font-display">Visualises</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">FLUX.1 via Replicate generates a consistent,
+                    photorealistic face for every post. Optional custom LoRA for total visual control.</p>
+            </div>
+            <div class="card-glow bg-brand-surface rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-4 right-4 text-6xl font-black text-brand-gold/10 font-display">3</div>
+                <div
+                    class="w-14 h-14 rounded-2xl bg-brand-gold/20 border border-brand-gold/30 flex items-center justify-center text-2xl mb-6">
+                    📤</div>
+                <h3 class="text-xl font-bold mb-3 font-display">Posts</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">A smart Celery scheduler publishes content autonomously
+                    to Twitter/X at randomised, human-like times. Looks completely organic.</p>
+            </div>
+            <div class="card-glow bg-brand-surface rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-4 right-4 text-6xl font-black text-green-500/10 font-display">4</div>
+                <div
+                    class="w-14 h-14 rounded-2xl bg-green-500/20 border border-green-500/30 flex items-center justify-center text-2xl mb-6">
+                    💬</div>
+                <h3 class="text-xl font-bold mb-3 font-display">Engages</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Optional services reply to mentions and like relevant
+                    content, growing the account authentically while you sleep.</p>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <p class="text-gray-600 text-sm">Reference persona: <span class="text-brand-purpleLight font-bold">Sienna
+                    Fox</span> — 23-year-old lifestyle influencer from Los Angeles</p>
+        </div>
+    </div>
+</section>
+
+<!-- Current Status -->
+<section class="py-16 px-6 bg-brand-surface reveal">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-black font-display mb-2">📍 Current Status <span
+                    class="text-brand-muted font-medium text-xl">(February 2026)</span></h2>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+                <thead>
+                    <tr class="border-b border-white/10">
+                        <th class="text-left py-3 px-4 text-gray-400 font-bold uppercase tracking-wider text-xs">
+                            Component</th>
+                        <th class="text-left py-3 px-4 text-gray-400 font-bold uppercase tracking-wider text-xs">
+                            Technology</th>
+                        <th class="text-left py-3 px-4 text-gray-400 font-bold uppercase tracking-wider text-xs">Status
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                    <tr class="hover:bg-white/2 transition-colors">
+                        <td class="py-4 px-4 font-bold text-white">🐦 Social Platform</td>
+                        <td class="py-4 px-4 text-gray-400">Twitter / X</td>
+                        <td class="py-4 px-4"><span
+                                class="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-bold">✅
+                                Production Ready</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/2 transition-colors">
+                        <td class="py-4 px-4 font-bold text-white">🎨 Image Generation</td>
+                        <td class="py-4 px-4 text-gray-400">FLUX 1 via Replicate</td>
+                        <td class="py-4 px-4"><span
+                                class="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-bold">✅
+                                Production Ready</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/2 transition-colors">
+                        <td class="py-4 px-4 font-bold text-white">🧠 LLM Brain</td>
+                        <td class="py-4 px-4 text-gray-400">OpenAI GPT-4 / GPT-4o-mini</td>
+                        <td class="py-4 px-4"><span
+                                class="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-bold">✅
+                                Production Ready</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/2 transition-colors">
+                        <td class="py-4 px-4 font-bold text-white">💾 Memory</td>
+                        <td class="py-4 px-4 text-gray-400">ChromaDB (RAG)</td>
+                        <td class="py-4 px-4"><span
+                                class="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-bold">✅
+                                Active</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/2 transition-colors">
+                        <td class="py-4 px-4 font-bold text-white">🖥️ Control Dashboard</td>
+                        <td class="py-4 px-4 text-gray-400">—</td>
+                        <td class="py-4 px-4"><span
+                                class="px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold">🔴
+                                Planned — Phase 3</span></td>
+                    </tr>
+                    <tr class="hover:bg-white/2 transition-colors">
+                        <td class="py-4 px-4 font-bold text-white">📸 Instagram / Others</td>
+                        <td class="py-4 px-4 text-gray-400">—</td>
+                        <td class="py-4 px-4"><span
+                                class="px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold">🔴
+                                Planned — Phase 4</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Architecture -->
+<section class="py-24 px-6 bg-brand-dark relative overflow-hidden reveal">
+    <div
+        class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-purple/5 rounded-full blur-[150px] pointer-events-none">
+    </div>
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="text-center mb-16">
+            <div
+                class="inline-block px-4 py-1.5 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-brand-purpleLight text-xs font-bold tracking-widest uppercase mb-6">
+                Architecture</div>
+            <h2 class="text-4xl lg:text-5xl font-black font-display mb-4">🏗️ How the engine works</h2>
+            <p class="text-xl text-gray-500">Three coordinated systems, one seamless pipeline.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 mb-12">
+            <!-- Brain -->
+            <div class="card-glow bg-brand-surface rounded-3xl p-8 text-center">
+                <div
+                    class="w-20 h-20 rounded-3xl bg-gradient-to-br from-brand-purple to-violet-900 flex items-center justify-center text-3xl mx-auto mb-6 glow-purple">
+                    🧠
+                </div>
+                <h3 class="text-2xl font-black font-display mb-4 text-brand-purpleLight">Brain</h3>
+                <p class="text-gray-500 mb-6 text-sm">The thinking engine. Generates ideas, writes posts, and remembers
+                    what was already said.</p>
+                <div class="space-y-2 text-left">
+                    <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/3 rounded-lg px-3 py-2"><span
+                            class="w-2 h-2 rounded-full bg-brand-purple flex-shrink-0"></span>LangChain + LangGraph
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/3 rounded-lg px-3 py-2"><span
+                            class="w-2 h-2 rounded-full bg-brand-purple flex-shrink-0"></span>OpenAI GPT-4 / GPT-4o-mini
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/3 rounded-lg px-3 py-2"><span
+                            class="w-2 h-2 rounded-full bg-brand-purple flex-shrink-0"></span>ChromaDB (vector memory)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagination -->
+            <div class="card-glow bg-brand-surface rounded-3xl p-8 text-center">
+                <div
+                    class="w-20 h-20 rounded-3xl bg-gradient-to-br from-brand-pink to-rose-900 flex items-center justify-center text-3xl mx-auto mb-6 glow-pink">
+                    🎨
+                </div>
+                <h3 class="text-2xl font-black font-display mb-4 text-brand-pinkLight">Imagination</h3>
+                <p class="text-gray-500 mb-6 text-sm">The visual pipeline. Creates a consistent, photorealistic face for
+                    every single post.</p>
+                <div class="space-y-2 text-left">
+                    <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/3 rounded-lg px-3 py-2"><span
+                            class="w-2 h-2 rounded-full bg-brand-pink flex-shrink-0"></span>Replicate API</div>
+                    <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/3 rounded-lg px-3 py-2"><span
+                            class="w-2 h-2 rounded-full bg-brand-pink flex-shrink-0"></span>FLUX.1 / SDXL + custom LoRA
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/3 rounded-lg px-3 py-2"><span
+                            class="w-2 h-2 rounded-full bg-brand-pink flex-shrink-0"></span>Visual QA pipeline</div>
+                </div>
+            </div>
+
+            <!-- Hands -->
+            <div class="card-glow bg-brand-surface rounded-3xl p-8 text-center">
+                <div class="w-20 h-20 rounded-3xl bg-gradient-to-br from-brand-gold to-orange-900 flex items-center justify-center text-3xl mx-auto mb-6"
+                    style="box-shadow: 0 0 30px rgba(245, 158, 11, 0.4)">
+                    📤
+                </div>
+                <h3 class="text-2xl font-black font-display mb-4 text-yellow-400">Hands</h3>
+                <p class="text-gray-500 mb-6 text-sm">The publishing system. Posts at human-like times, replies to
+                    mentions, likes relevant content.</p>
+                <div class="space-y-2 text-left">
+                    <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/3 rounded-lg px-3 py-2"><span
+                            class="w-2 h-2 rounded-full bg-brand-gold flex-shrink-0"></span>Tweepy (Twitter/X API)</div>
+                    <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/3 rounded-lg px-3 py-2"><span
+                            class="w-2 h-2 rounded-full bg-brand-gold flex-shrink-0"></span>Celery + Redis scheduler
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/3 rounded-lg px-3 py-2"><span
+                            class="w-2 h-2 rounded-full bg-brand-gold flex-shrink-0"></span>Anti-detection timing</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Stack Table -->
+        <div class="bg-brand-surface rounded-3xl p-8 border border-white/5 overflow-x-auto">
+            <h3 class="text-xl font-bold font-display mb-6 text-gray-300">Full Tech Stack</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="flex items-center gap-3 text-sm">
+                    <div
+                        class="w-8 h-8 bg-brand-purple/20 rounded-lg flex items-center justify-center text-brand-purpleLight">
+                        <i class="fab fa-python"></i></div>
+                    <div>
+                        <div class="font-bold text-white">Python 3.10+</div>
+                        <div class="text-gray-600 text-xs">Language</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div
+                        class="w-8 h-8 bg-brand-purple/20 rounded-lg flex items-center justify-center text-brand-purpleLight">
+                        <i class="fas fa-brain"></i></div>
+                    <div>
+                        <div class="font-bold text-white">LangChain / LangGraph</div>
+                        <div class="text-gray-600 text-xs">AI orchestration</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div
+                        class="w-8 h-8 bg-brand-pink/20 rounded-lg flex items-center justify-center text-brand-pinkLight">
+                        <i class="fas fa-image"></i></div>
+                    <div>
+                        <div class="font-bold text-white">FLUX.1 / Replicate</div>
+                        <div class="text-gray-600 text-xs">Image generation</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div class="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-400"><i
+                            class="fab fa-x-twitter"></i></div>
+                    <div>
+                        <div class="font-bold text-white">Tweepy</div>
+                        <div class="text-gray-600 text-xs">Twitter/X API</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div class="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center text-green-400"><i
+                            class="fas fa-server"></i></div>
+                    <div>
+                        <div class="font-bold text-white">FastAPI + Uvicorn</div>
+                        <div class="text-gray-600 text-xs">REST API</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div class="w-8 h-8 bg-red-500/20 rounded-lg flex items-center justify-center text-red-400"><i
+                            class="fas fa-tasks"></i></div>
+                    <div>
+                        <div class="font-bold text-white">Celery + Redis</div>
+                        <div class="text-gray-600 text-xs">Task queue</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div class="w-8 h-8 bg-blue-700/20 rounded-lg flex items-center justify-center text-blue-300"><i
+                            class="fas fa-database"></i></div>
+                    <div>
+                        <div class="font-bold text-white">PostgreSQL 15</div>
+                        <div class="text-gray-600 text-xs">Database</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div
+                        class="w-8 h-8 bg-brand-purple/20 rounded-lg flex items-center justify-center text-brand-purpleLight">
+                        <i class="fas fa-circle-nodes"></i></div>
+                    <div>
+                        <div class="font-bold text-white">ChromaDB</div>
+                        <div class="text-gray-600 text-xs">Vector memory (RAG)</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div class="w-8 h-8 bg-[#2496ED]/20 rounded-lg flex items-center justify-center text-[#2496ED]"><i
+                            class="fab fa-docker"></i></div>
+                    <div>
+                        <div class="font-bold text-white">Docker Compose</div>
+                        <div class="text-gray-600 text-xs">Deployment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Start -->
+<section id="quick-start" class="py-24 px-6 bg-brand-surface relative overflow-hidden reveal scroll-mt-24">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <div
+                class="inline-block px-4 py-1.5 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-brand-purpleLight text-xs font-bold tracking-widest uppercase mb-6">
+                Quick Start</div>
+            <h2 class="text-4xl lg:text-5xl font-black font-display mb-4">🚀 Up and running in 5 steps</h2>
+            <p class="text-xl text-gray-500">Prerequisites: Docker Desktop, Git, and API keys for OpenAI + Replicate +
+                Twitter/X</p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Step 1 -->
+            <div class="bg-brand-dark rounded-2xl border border-white/5 overflow-hidden">
+                <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5">
+                    <div
+                        class="w-8 h-8 rounded-full bg-brand-purple flex items-center justify-center text-white font-black text-sm flex-shrink-0">
+                        1</div>
+                    <span class="font-bold text-white">Clone the repository</span>
+                </div>
+                <div class="code-block rounded-none rounded-b-2xl">
+                    <span class="cmd">git clone</span> https://github.com/zirelia/zirelia.git<br>
+                    <span class="cmd">cd</span> zirelia
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-brand-dark rounded-2xl border border-white/5 overflow-hidden">
+                <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5">
+                    <div
+                        class="w-8 h-8 rounded-full bg-brand-purple flex items-center justify-center text-white font-black text-sm flex-shrink-0">
+                        2</div>
+                    <span class="font-bold text-white">Configure your API keys</span>
+                </div>
+                <div class="code-block rounded-none">
+                    <span class="cmd">cp</span> .env.template .env<br>
+                    <span class="comment"># Fill in your API keys:</span>
+                </div>
+                <div class="code-block rounded-none rounded-b-2xl border-t border-white/5" style="color: #a78bfa">
+                    OPENAI_API_KEY=<span class="str">sk-...</span><br>
+                    REPLICATE_API_TOKEN=<span class="str">r8_...</span><br>
+                    REPLICATE_MODEL_VERSION=<span class="str">black-forest-labs/flux-1.1-pro</span><br>
+                    TWITTER_API_KEY=<span class="str">...</span><br>
+                    TWITTER_API_SECRET=<span class="str">...</span><br>
+                    TWITTER_ACCESS_TOKEN=<span class="str">...</span><br>
+                    TWITTER_ACCESS_TOKEN_SECRET=<span class="str">...</span><br>
+                    TWITTER_BEARER_TOKEN=<span class="str">...</span>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-brand-dark rounded-2xl border border-white/5 overflow-hidden">
+                <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5">
+                    <div
+                        class="w-8 h-8 rounded-full bg-brand-purple flex items-center justify-center text-white font-black text-sm flex-shrink-0">
+                        3</div>
+                    <span class="font-bold text-white">Launch with Docker</span>
+                </div>
+                <div class="code-block rounded-none rounded-b-2xl">
+                    <span class="cmd">docker compose up</span> --build -d<br>
+                    <span class="comment"># Starts: api · scheduler · worker · db · redis</span>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-brand-dark rounded-2xl border border-white/5 overflow-hidden">
+                <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5">
+                    <div
+                        class="w-8 h-8 rounded-full bg-brand-purple flex items-center justify-center text-white font-black text-sm flex-shrink-0">
+                        4</div>
+                    <span class="font-bold text-white">Verify it's running</span>
+                </div>
+                <div class="code-block rounded-none rounded-b-2xl">
+                    <span class="cmd">docker compose ps</span><br>
+                    <span class="cmd">docker compose logs</span> scheduler -f
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="bg-brand-dark rounded-2xl border border-white/5 overflow-hidden">
+                <div class="flex items-center gap-4 px-6 py-4 border-b border-white/5">
+                    <div
+                        class="w-8 h-8 rounded-full bg-gradient-to-r from-brand-purple to-brand-pink flex items-center justify-center text-white font-black text-sm flex-shrink-0">
+                        5</div>
+                    <span class="font-bold text-white">Post manually (optional)</span>
+                </div>
+                <div class="code-block rounded-none rounded-b-2xl">
+                    <span class="comment"># Dry run — no actual posting:</span><br>
+                    <span class="cmd">python main.py</span> --platform twitter --dry-run<br><br>
+                    <span class="comment"># Post now with image:</span><br>
+                    <span class="cmd">python main.py</span> --platform twitter --mode hybrid<br><br>
+                    <span class="comment"># Text only, custom topic:</span><br>
+                    <span class="cmd">python main.py</span> --platform twitter --mode text --topic <span
+                        class="str">"morning coffee ritual"</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Persona Configuration -->
+<section class="py-24 px-6 bg-brand-dark relative overflow-hidden reveal">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div
+                    class="absolute -inset-4 bg-gradient-to-r from-brand-purple/20 to-brand-pink/20 rounded-3xl blur-2xl">
+                </div>
+                <div class="relative bg-brand-surface rounded-3xl border border-white/10 overflow-hidden">
+                    <div class="bg-[#0a0a0a] px-5 py-3 flex items-center justify-between border-b border-white/5">
+                        <div class="flex items-center gap-2">
+                            <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                            <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                            <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+                        </div>
+                        <div class="text-xs font-mono text-gray-500">config/persona.yaml</div>
+                        <div class="text-xs text-brand-purple font-bold">🧜‍♀️ Sienna Fox</div>
+                    </div>
+                    <div class="code-block rounded-none rounded-b-3xl text-xs leading-relaxed"
+                        style="min-height: 320px">
+                        <span class="text-brand-purpleLight">name:</span> <span class="str">"Sienna Fox"</span>
+                        <span class="text-brand-purpleLight">age:</span> <span class="str">23</span>
+                        <span class="text-brand-purpleLight">nationality:</span> <span class="str">"American (Los
+                            Angeles, CA)"</span>
+
+                        <span class="text-brand-purpleLight">physical_traits:</span>
+                        <span class="text-brand-purpleLight">hair:</span> <span class="str">"Light Brown / Dirty Blonde
+                            (Wavy)"</span>
+                        <span class="text-brand-purpleLight">eyes:</span> <span class="str">"Hazel / Warm Brown"</span>
+                        <span class="text-brand-purpleLight">vibe:</span> <span class="str">"Natural, Sun-kissed"</span>
+
+                        <span class="text-brand-purpleLight">traits:</span>
+                        - <span class="str">"Confident"</span>
+                        - <span class="str">"Playful / Flirty"</span>
+                        - <span class="str">"Witty"</span>
+
+                        <span class="text-brand-purpleLight">voice:</span>
+                        <span class="text-brand-purpleLight">tone:</span> <span class="str">"Seductive but
+                            friendly"</span>
+                        <span class="text-brand-purpleLight">style:</span> <span class="str">"Short, punchy, uses emojis
+                            ✨ 😉"</span>
+
+                        <span class="text-brand-purpleLight">routine:</span>
+                        <span class="text-brand-purpleLight">morning:</span>
+                        - <span class="str">"Waking up in silk sheets"</span>
+                        - <span class="str">"Morning stretch"</span>
+                        <span class="text-brand-purpleLight">evening:</span>
+                        - <span class="str">"Sunset at the beach"</span>
+                        - <span class="str">"Glass of wine"</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div
+                    class="inline-block px-4 py-1.5 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-brand-purpleLight text-xs font-bold tracking-widest uppercase mb-6">
+                    🎭 Persona</div>
+                <h2 class="text-4xl lg:text-5xl font-black font-display mb-6">Your persona lives in one YAML file.</h2>
+                <p class="text-xl text-gray-500 mb-8 leading-relaxed">
+                    No code. No prompt engineering. Just describe who your influencer is — personality, look, voice,
+                    daily routine — and Zirelia does the rest. Forever.
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-3 text-gray-300"><i
+                            class="fas fa-check-circle text-brand-purple"></i> <span>Name, age, nationality, physical
+                            traits</span></li>
+                    <li class="flex items-center gap-3 text-gray-300"><i
+                            class="fas fa-check-circle text-brand-purple"></i> <span>Personality traits and tone of
+                            voice</span></li>
+                    <li class="flex items-center gap-3 text-gray-300"><i
+                            class="fas fa-check-circle text-brand-purple"></i> <span>Daily routine for contextual
+                            posts</span></li>
+                    <li class="flex items-center gap-3 text-gray-300"><i
+                            class="fas fa-check-circle text-brand-purple"></i> <span>Custom LoRA model for visual
+                            identity</span></li>
+                    <li class="flex items-center gap-3 text-gray-300"><i
+                            class="fas fa-check-circle text-brand-purple"></i> <span>ChromaDB prevents post
+                            repetition</span></li>
+                </ul>
+                <div class="flex gap-4">
+                    <a href="https://zirelia.github.io/zirelia/getting-started/configuration/" target="_blank"
+                        class="px-6 py-3 rounded-xl bg-brand-purple/20 border border-brand-purple/30 text-brand-purpleLight font-bold hover:bg-brand-purple/30 transition-colors text-sm">
+                        Read Config Guide →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Roadmap -->
+<section class="py-24 px-6 bg-brand-surface reveal">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <div
+                class="inline-block px-4 py-1.5 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-brand-purpleLight text-xs font-bold tracking-widest uppercase mb-6">
+                Roadmap</div>
+            <h2 class="text-4xl lg:text-5xl font-black font-display mb-4">🗺️ Where we're going</h2>
+        </div>
+
+        <div class="space-y-4 max-w-4xl mx-auto">
+            <div class="flex items-center gap-6 bg-green-500/5 border border-green-500/20 rounded-2xl p-6">
+                <div
+                    class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center text-green-400 font-black flex-shrink-0">
+                    ✅</div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="font-bold text-white">Phase 1</span>
+                        <span
+                            class="px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 text-xs font-bold">Complete</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Foundation: Twitter, FLUX.1, Smart Scheduler, ChromaDB memory</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 bg-yellow-500/5 border border-yellow-500/20 rounded-2xl p-6">
+                <div
+                    class="w-12 h-12 rounded-xl bg-yellow-500/20 flex items-center justify-center text-yellow-400 font-black flex-shrink-0">
+                    🟡</div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="font-bold text-white">Phase 2</span>
+                        <span class="px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-400 text-xs font-bold">In
+                            Progress</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Infrastructure: PostgreSQL pgvector, Celery integration, engagement
+                        automation</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 bg-white/2 border border-white/5 rounded-2xl p-6 opacity-70">
+                <div
+                    class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-gray-500 font-black flex-shrink-0">
+                    🔴</div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="font-bold text-white">Phase 3</span>
+                        <span class="px-2 py-0.5 rounded-full bg-white/5 text-gray-500 text-xs font-bold">Planned</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Control Dashboard (Streamlit/React) — manage persona, review posts,
+                        analytics</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 bg-white/2 border border-white/5 rounded-2xl p-6 opacity-60">
+                <div
+                    class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-gray-500 font-black flex-shrink-0">
+                    🔴</div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="font-bold text-white">Phase 4</span>
+                        <span class="px-2 py-0.5 rounded-full bg-white/5 text-gray-500 text-xs font-bold">Planned</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Multi-Platform: Instagram, LinkedIn, Telegram</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 bg-white/2 border border-white/5 rounded-2xl p-6 opacity-50">
+                <div
+                    class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-gray-500 font-black flex-shrink-0">
+                    🔴</div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="font-bold text-white">Phase 5</span>
+                        <span class="px-2 py-0.5 rounded-full bg-white/5 text-gray-500 text-xs font-bold">Planned</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Multimedia: ElevenLabs voice, video clips (Reels/TikTok)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Docker Services -->
+<section class="py-24 px-6 bg-brand-dark reveal">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <div
+                class="inline-block px-4 py-1.5 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-brand-purpleLight text-xs font-bold tracking-widest uppercase mb-6">
+                🐳 Docker</div>
+            <h2 class="text-4xl font-black font-display mb-4">All services in one command</h2>
+            <p class="text-gray-500 text-lg"><code
+                    class="bg-brand-surface px-3 py-1 rounded-lg text-brand-purpleLight font-mono">docker compose up --build -d</code>
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="card-glow bg-brand-surface rounded-2xl p-6">
+                <div
+                    class="w-10 h-10 rounded-xl bg-brand-purple/20 flex items-center justify-center mb-4 text-brand-purpleLight">
+                    <i class="fas fa-bolt"></i></div>
+                <div class="font-mono text-brand-purpleLight font-bold text-sm mb-2">api</div>
+                <p class="text-gray-500 text-xs">FastAPI REST server (port 8000)</p>
+            </div>
+            <div class="card-glow bg-brand-surface rounded-2xl p-6">
+                <div class="w-10 h-10 rounded-xl bg-green-500/20 flex items-center justify-center mb-4 text-green-400">
+                    <i class="fas fa-clock"></i></div>
+                <div class="font-mono text-green-400 font-bold text-sm mb-2">scheduler</div>
+                <p class="text-gray-500 text-xs">Autonomous posting daemon — runs 24/7</p>
+            </div>
+            <div class="card-glow bg-brand-surface rounded-2xl p-6">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center mb-4 text-blue-400"><i
+                        class="fas fa-gears"></i></div>
+                <div class="font-mono text-blue-400 font-bold text-sm mb-2">worker</div>
+                <p class="text-gray-500 text-xs">Celery background task worker</p>
+            </div>
+            <div class="card-glow bg-brand-surface rounded-2xl p-6">
+                <div
+                    class="w-10 h-10 rounded-xl bg-yellow-500/20 flex items-center justify-center mb-4 text-yellow-400">
+                    <i class="fas fa-database"></i></div>
+                <div class="font-mono text-yellow-400 font-bold text-sm mb-2">db</div>
+                <p class="text-gray-500 text-xs">PostgreSQL 15 (persistent storage)</p>
+            </div>
+            <div class="card-glow bg-brand-surface rounded-2xl p-6">
+                <div class="w-10 h-10 rounded-xl bg-red-500/20 flex items-center justify-center mb-4 text-red-400"><i
+                        class="fas fa-circle-nodes"></i></div>
+                <div class="font-mono text-red-400 font-bold text-sm mb-2">redis</div>
+                <p class="text-gray-500 text-xs">Message broker / task queue</p>
+            </div>
+            <div class="card-glow bg-brand-surface rounded-2xl p-6 border-dashed border border-white/5">
+                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center mb-4 text-gray-500"><i
+                        class="fas fa-reply"></i></div>
+                <div class="font-mono text-gray-500 font-bold text-sm mb-2">replier</div>
+                <p class="text-gray-600 text-xs">Reply to Twitter mentions (manual profile)</p>
+                <span class="text-xs text-gray-600 font-mono mt-2 block">--profile manual</span>
+            </div>
+            <div class="card-glow bg-brand-surface rounded-2xl p-6 border-dashed border border-white/5">
+                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center mb-4 text-gray-500"><i
+                        class="fas fa-heart"></i></div>
+                <div class="font-mono text-gray-500 font-bold text-sm mb-2">liker</div>
+                <p class="text-gray-600 text-xs">Like relevant content (manual profile)</p>
+                <span class="text-xs text-gray-600 font-mono mt-2 block">--profile manual</span>
+            </div>
+            <div
+                class="card-glow bg-brand-surface rounded-2xl p-6 flex flex-col items-center justify-center text-center border-dashed">
+                <div class="text-3xl mb-3">🔮</div>
+                <p class="text-gray-600 text-xs">More services coming in Phase 3</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA / Docs -->
+<section class="py-32 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-dark via-[#1a0a2e] to-brand-dark"></div>
+    <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-purple/15 blur-[150px] rounded-full pointer-events-none">
+    </div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10 reveal">
+        <div class="text-7xl mb-6 animate-float">🧜‍♀️</div>
+        <h2 class="text-5xl lg:text-7xl font-black font-display tracking-tight mb-6">
+            Ready to build your<br>
+            <span class="gradient-text">virtual influencer?</span>
+        </h2>
+        <p class="text-xl text-gray-400 mb-12 leading-relaxed">
+            Free & open source. Apache-2.0. Full documentation, guides, and anti-ban strategies ready for you.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://github.com/zirelia/zirelia" target="_blank" rel="noopener"
+                class="inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-brand-purple to-brand-pink rounded-2xl font-bold text-xl hover:scale-105 transition-transform shadow-2xl glow-purple">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <a href="https://zirelia.github.io/zirelia/" target="_blank" rel="noopener"
+                class="inline-flex items-center justify-center gap-3 px-10 py-5 border border-white/20 rounded-2xl font-bold text-xl hover:bg-white/5 transition-colors">
+                <i class="fas fa-book"></i> Read the Docs
+            </a>
+        </div>
+        <p class="text-gray-600 text-sm mt-8">
+            Built by <a href="https://antoniotrento.net" class="text-brand-purpleLight hover:underline">Antonio
+                Trento</a> · Licensed under <a href="https://www.elastic.co/licensing/elastic-license"
+                class="text-brand-purpleLight hover:underline">ELv2</a>
+        </p>
+    </div>
+</section>

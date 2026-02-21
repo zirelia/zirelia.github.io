@@ -1,0 +1,54 @@
+title: "Zirelia"
+description: "Autonomous AI Virtual Influencer Engine. Define a persona. Zirelia does the rest — 24/7."
+baseurl: ""
+url: "https://zirelia.github.io"
+
+author:
+  name: "Antonio Trento"
+  email: "info@antoniotrento.net"
+  bio: "AI Engineer & Developer — Building autonomous virtual influencer systems"
+
+og_image: "assets/images/og-image.jpg"
+
+paginate: 20
+paginate_path: "/blog/page:num"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+faq:
+  - question: "Do I need coding skills to use Zirelia?"
+    answer: "Basic CLI/Docker knowledge is helpful. You only need to fill in a YAML file and run docker compose up."
+  - question: "Will my account get banned?"
+    answer: "Risk exists. Always read the Account Warm-Up & Anti-Ban Guide before running the bot on a live account."
+  - question: "How much does it cost to run Zirelia?"
+    answer: "Zirelia is free & open source. You pay only for API usage: OpenAI (~$5–20/month), Replicate (~$10–40/month), and Twitter Basic Developer access ($100/month)."
+  - question: "Which social platforms are supported?"
+    answer: "Currently Twitter/X only. Instagram, LinkedIn, Telegram, and TikTok are on the roadmap (Phase 4–5)."
+  - question: "Can I create my own persona?"
+    answer: "Yes. The entire personality, appearance, voice and routine live in a single YAML config file. No code changes needed."
+
+social:
+  github: "https://github.com/zirelia/zirelia"
+  twitter: "https://x.com"
+
+permalink: "/:categories/:title/"
+markdown: kramdown
+highlighter: rouge
+
+include:
+  - assets
+  - robots.txt
+
+keywords:
+  - virtual influencer
+  - ai influencer
+  - autonomous ai
+  - twitter automation
+  - gpt-4
+  - flux
+  - image generation
+  - docker
+  - open source
