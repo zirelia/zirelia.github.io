@@ -22,15 +22,42 @@
                 Define a persona. Zirelia thinks, generates images, and posts autonomously — 24/7.
                 {% endif %}
             </p>
-            <div class="flex gap-3">
-                <a href="https://github.com/zirelia/zirelia" target="_blank" rel="noopener"
-                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-purple hover:border-brand-purple transition-all text-gray-400 hover:text-white">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://x.com/ItsSiennaFox" target="_blank" rel="noopener"
-                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-purple hover:border-brand-purple transition-all text-gray-400 hover:text-white">
-                    <i class="fab fa-x-twitter"></i>
-                </a>
+            <div class="flex flex-col sm:flex-row gap-6">
+                <!-- Zirelia Project -->
+                <div>
+                    <p class="text-gray-600 text-[10px] font-bold uppercase tracking-widest mb-2">
+                        {% if page.lang == 'it' %}Progetto{% else %}Project{% endif %}
+                    </p>
+                    <div class="flex gap-2">
+                        <a href="https://github.com/zirelia/zirelia" target="_blank" rel="noopener"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-purple hover:border-brand-purple transition-all text-gray-400 hover:text-white"
+                            title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sienna Fox -->
+                <div>
+                    <p class="text-gray-600 text-[10px] font-bold uppercase tracking-widest mb-2">Sienna Fox</p>
+                    <div class="flex gap-2">
+                        <a href="https://www.instagram.com/itssiennafox/" target="_blank" rel="noopener"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:border-pink-500 transition-all text-gray-400 hover:text-white"
+                            title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/people/Itssiennafox/61588032203458/" target="_blank"
+                            rel="noopener"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#1877F2] hover:border-[#1877F2] transition-all text-gray-400 hover:text-white"
+                            title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/ItsSiennaFox" target="_blank" rel="noopener"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-purple hover:border-brand-purple transition-all text-gray-400 hover:text-white"
+                            title="X / Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
