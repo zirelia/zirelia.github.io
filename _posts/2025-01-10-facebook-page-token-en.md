@@ -5,7 +5,7 @@ date: 2025-01-10 10:00:00 +0100
 categories: [guide, configuration]
 lang: en
 description: "The essential guide to obtaining the Facebook Permanent Page Access Token. We solve the 'User Token' reset bug and make automation run 24/7."
-image: /assets/images/blog/sienna-case-study.jpg
+image: /assets/images/blog/facebook-token.png
 ---
 
 We've established that Meta is the natural home for Zirelia. The barrier to entry isn't shadowban algorithms, but rather navigating the daunting **Meta Developer Portal**. Often, AI accounts fail before even sending their very first `v26.0` API request due to Tokens vanishing into thin air.

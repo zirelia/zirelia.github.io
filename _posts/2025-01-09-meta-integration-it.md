@@ -5,7 +5,7 @@ date: 2025-01-09 10:00:00 +0100
 categories: [aggiornamenti, guide]
 lang: it
 description: "Il motore di Zirelia è ora interamente configurabile per automatizzare contenuti su Instagram e Pagine Facebook. Scopri la potenza della Graph API v26.0 gratuita e permissiva."
-image: /assets/images/blog/the-brain.png
+image: /assets/images/blog/meta-integration.png
 ---
 
 Come annunciato in precedenza, l'ecosistema Zirelia ha abbracciato Meta come piattaforma primaria per la crescita del tuo AI Virtual Influencer. Abbandonando un ecosistema punitivo e limitato, ci immergiamo in una piattaforma che premia l'estetica visiva e la coerenza.

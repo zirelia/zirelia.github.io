@@ -71,4 +71,38 @@ Generatore: Gemini (Imagen)
 
 ---
 
+## meta-integration.png
+Post: Zirelia Lands on Meta (2025-01-09)
+Prompt:
+```
+A glowing neon purple holographic Instagram camera icon at the center,
+surrounded by a circular network of vibrant digital nodes
+and connection lines, all lit bright purple and pink, suggesting 
+smooth and limitless connectivity. Pure black background. 
+Cyberpunk aesthetic. Soft magenta and violet glow. No text.
+Small four-pointed star sparkle in bottom right corner.
+Photorealistic 3D render style.
+1024x1024 pixels, square format.
+```
+Generatore: Gemini (Imagen)
+
+---
+
+## facebook-token.png
+Post: The Secret to Meta Tokens (2025-01-10)
+Prompt:
+```
+A glowing neon blue and purple holographic key at the center,
+floating amidst a dark background with faint data streams
+and server racks, suggesting backend access and permanent API unlocking. 
+Pure black background. Cyberpunk aesthetic. 
+Soft cyan and violet glow. No text.
+Small four-pointed star sparkle in bottom right corner.
+Photorealistic 3D render style.
+1024x1024 pixels, square format.
+```
+Generatore: Gemini (Imagen)
+
+---
+
 _Aggiungi i prompt mancanti man mano che li recuperi._

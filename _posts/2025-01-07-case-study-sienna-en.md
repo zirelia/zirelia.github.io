@@ -45,27 +45,27 @@ The visual identity was the hardest part.
 
 Total cost: approximately $8 in Replicate compute.
 
-## The First Month: Key Observations
+## The Meta Launch: Instagram and Facebook
 
-After four weeks of operation (manual warm-up for the first two weeks, then full automation):
+After abandoning the restrictive environment of X (due to rampant bans on new accounts), we launched Sienna Fox directly onto the Meta ecosystem. By creating a Facebook Page and linking it to a Professional Instagram Account, Sienna began posting **from Day 1**, with absolutely no need for tedious manual "warm-ups."
 
-**Content volume**: 67 posts generated and published, averaging 2.4 per day with natural variation.
+**Content volume**: Seamless publishing via the Graph API v26.0, averaging 2 posts per day (photographic Reels and square posts) scheduled at randomized times.
 
-**Content quality**: The brain successfully avoided repetition in all but 3 cases (which were caught by the memory retrieval system and regenerated).
+**Content quality**: The brain successfully avoided repetition in all but 3 cases (which were caught by the memory retrieval system and regenerated). Instagram's visual emphasis perfectly highlights the FLUX.1 engine.
 
-**Image quality**: 91% of images passed the quality control loop on the first attempt. The remaining 9% required one retry.
+**Image quality**: 91% of images passed the quality control loop on the first attempt. Instagram's visual format is Zirelia's natural habitat.
 
-**Voice consistency**: The most subjective metric — but consistent enough that early followers responded to replies recognizing "her" tone.
+**Reach and Safety**: Unlike X, Meta did not shadowban the account. By inheriting the "trust" of the linked developer profile, Sienna's posts hit the explore page and hashtags organically from the very first hours.
 
 ## What We Learned
 
-**The persona.yaml is everything.** Vague character definitions produce vague content. The more specific and human the persona, the more specific and human the output.
+**The persona.yaml is everything.** Vague character definitions produce vague content. The more specific and human the persona, the more engaging and real the Instagram caption becomes.
 
-**Visual consistency requires a LoRA.** Text prompts alone produce too much variation across dozens of posts. The LoRA investment (time + ~$8) pays for itself immediately.
+**Visual consistency requires a LoRA.** Text prompts alone produce too much variation across dozens of posts. On Instagram, aesthetics are everything. The LoRA investment (time + ~$8) pays for itself immediately.
 
-**Warm-up is non-negotiable.** Jumping straight to automation on a new account is the fastest path to suspension. Two weeks of manual activity is the minimum.
+**The Meta trust bridge works.** API access predicated on a trusted, historical authenticating social account completely eliminates the need for weeks of tedious manual interactions before you can flip the automation switch.
 
-**Memory matters more than expected.** Without ChromaDB memory, the brain repeated topics within a single week. With memory enabled, content diversity improved dramatically.
+**Memory matters more than expected.** Without ChromaDB memory, the brain repeated topics within a single week. With memory enabled, the diversity of photographic and textual content improved dramatically.
 
 ## The Engine Behind the Influencer
 

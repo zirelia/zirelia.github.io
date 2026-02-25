@@ -45,27 +45,27 @@ L'identità visiva è stata la parte più difficile.
 
 Costo totale: circa 8€ in compute Replicate.
 
-## Il Primo Mese: Osservazioni Chiave
+## Il Lancio su Meta: Instagram e Facebook
 
-Dopo quattro settimane di operatività (warm-up manuale per le prime due settimane, poi automazione completa):
+Dopo aver abbandonato l'ambiente restrittivo di X (a causa dei ban incontrollati sui nuovi account), abbiamo lanciato Sienna Fox direttamente sull'ecosistema Meta. Creando una Pagina Facebook e collegandola a un Account Professionale Instagram, Sienna ha iniziato a postare **dal Giorno 1**, senza alcun bisogno di faticosi "warm-up" manuali.
 
-**Volume di contenuto**: 67 post generati e pubblicati, con una media di 2,4 al giorno e variazione naturale.
+**Volume di contenuto**: Pubblicazione fluida tramite la Graph API v26.0, con una media di 2 post al giorno (Reels fotografici e post quadrati) schedulati in orari casuali.
 
-**Qualità dei contenuti**: Il cervello ha evitato con successo le ripetizioni in tutti i casi tranne 3 (che sono stati intercettati dal sistema di recupero della memoria e rigenerati).
+**Qualità dei contenuti**: Il cervello ha evitato con successo le ripetizioni in tutti i casi tranne 3 (che sono stati intercettati dal sistema di recupero della memoria e rigenerati). L'enfasi visiva di Instagram esalta perfettamente il motore FLUX.1.
 
-**Qualità delle immagini**: Il 91% delle immagini ha superato il loop di controllo qualità al primo tentativo. Il restante 9% ha richiesto un solo tentativo aggiuntivo.
+**Qualità delle immagini**: Il 91% delle immagini ha superato il loop di controllo qualità al primo tentativo. Il formato visivo di Instagram è l'habitat naturale di Zirelia.
 
-**Coerenza della voce**: La metrica più soggettiva — ma abbastanza coerente da far sì che i primi follower riconoscessero il suo tono nelle risposte.
+**Reach e Sicurezza**: A differenza di X, Meta non ha shadowbannato l'account. Ereditando la "fiducia" del profilo sviluppatore collegato, i post di Sienna hanno raggiunto esplora e hashtag organicamente fin dalle prime ore.
 
 ## Cosa Abbiamo Imparato
 
-**Il persona.yaml è tutto.** Le definizioni di personaggio vaghe producono contenuti vaghi. Più la persona è specifica e umana, più l'output è specifico e umano.
+**Il persona.yaml è tutto.** Le definizioni di personaggio vaghe producono contenuti vaghi. Più la persona è specifica e umana, più la caption di Instagram è coinvolgente e reale.
 
-**La coerenza visiva richiede un LoRA.** I soli prompt testuali producono troppa variazione in decine di post. L'investimento nel LoRA (tempo + ~8€) si ripaga immediatamente.
+**La coerenza visiva richiede un LoRA.** I soli prompt testuali producono troppa variazione in decine di post. Su Instagram, l'estetica è tutto. L'investimento nel LoRA (tempo + ~8€) si ripaga immediatamente.
 
-**Il warm-up non è negoziabile.** Passare direttamente all'automazione su un account nuovo è il percorso più rapido verso la sospensione. Due settimane di attività manuale sono il minimo.
+**Il bridge di fiducia di Meta funziona.** L'accesso API basato su un account social storico autenticante elimina completamente la necessità di settimane di interazioni manuali noiose prima di poter accendere l'automazione.
 
-**La memoria conta più del previsto.** Senza la memoria ChromaDB, il cervello ripeteva argomenti nell'arco di una settimana. Con la memoria abilitata, la diversità dei contenuti è migliorata notevolmente.
+**La memoria conta più del previsto.** Senza la memoria ChromaDB, il cervello ripeteva argomenti nell'arco di una settimana. Con la memoria abilitata, la diversità dei contenuti fotografici e testuali è migliorata notevolmente.
 
 ## Il Motore Dietro l'Influencer
 
