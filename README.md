@@ -95,6 +95,9 @@ git push origin main                     # Deploy automatico su GitHub Pages
 
 ## todo
 
-- megapost guida a come non farsi bannare appena aperto account c
+- Aggiungere al post di sienna qualche foto o embed pagina
+- aggiungere in basso nel footer instagram e facebook (di sienna) magari una sezione distaccat ada github per far capire che non sono pagine di zirelia ma di sienna
+- Sezione features del sito: Prossimamente-->Funzionalità in roadmap — contributi benvenuti
+    - va aggiunto anche il motore di like commenti ai post e reply automatica ai commenti con intelligenza artificiale
 
 Zirelia — *Define a persona. Zirelia does the rest — 24/7.*
